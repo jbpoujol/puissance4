@@ -1,27 +1,43 @@
-# Puissance4
+# Connect Four Game
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
+Welcome to this implementation of the classic Connect Four game. This project is a simple, yet engaging Angular application that allows two players to play the Connect Four game against each other. It was developed as part of a technical test, with the challenge to complete the task in under 45 minutes.
 
-## Development server
+## Overview
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Connect Four is a two-player connection game in which the players first choose a color and then take turns dropping colored tokens from the top into a seven-column, six-row vertically suspended grid. The pieces fall straight down, occupying the lowest available space within the column. The objective of the game is to be the first to form a horizontal, vertical, or diagonal line of four of one's own tokens.
 
-## Code scaffolding
+## Technical Implementation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This project is built using Angular, a platform and framework for building single-page client applications using HTML and TypeScript. The game logic and state management are handled within Angular services, utilizing BehaviorSubjects from RxJS for reactive state management. The UI updates reactively based on the game's state.
 
-## Build
+## Project Structure
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- `GameLogicService`: Contains the core logic for the game, including initializing the board, handling player turns, and checking for a win condition.
+- `GameBoardComponent`: Responsible for displaying the game board and handling user interactions, such as token placement.
+- The application utilizes Angular's reactive forms and RxJS observables to manage and respond to changes in the game's state.
 
-## Running unit tests
+## Running the Project
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To run this project on your local machine, follow these steps:
 
-## Running end-to-end tests
+1. Make sure you have [Node.js](https://nodejs.org/) and [Angular CLI](https://cli.angular.io/) installed.
+2. Clone this repository to your local machine.
+3. Navigate to the project directory and install dependencies:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   ```bash
+   npm install
+   ```
 
-## Further help
+4. Start the development server:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+   ```bash
+   ng serve
+   ```
+
+5. Open your web browser and navigate to `http://localhost:4200/` to view the game.
+
+## Purpose
+
+This game was developed as a technical test to demonstrate proficiency in Angular, TypeScript, and reactive programming concepts. The challenge was to implement the game within a strict timeframe of 45 minutes, showcasing the ability to quickly understand requirements, design a solution, and implement functionality effectively.
+
+Thank you for checking out this project. Enjoy playing Connect Four!
