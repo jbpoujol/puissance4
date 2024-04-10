@@ -1,0 +1,22 @@
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  border: 5px solid darkblue;
+  background-color: white;
+}
+
+.cell.red {
+  background-color: red;
+}
+
+.cell.yellow {
+  background-color: yellow;
+}
